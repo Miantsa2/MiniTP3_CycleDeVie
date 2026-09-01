@@ -1,0 +1,5 @@
+- Bonne ligne : oui, ligne 29 était  identifiée comme la ligne du crash.
+- Bonne cause : non,  
+  -  hypothèses évoqués: mauvais layout, ViewStub, layout alternatif
+  -  la vraie cause  : l'id R.id.btnPartage n'existe pas dans le layout réel c'est R.id.btnPartager (et non partage)
+- Bonne correction : partiellement vrai , correction proposée : vérifier setContentView et si l'id R.id.btnPartage existe 
